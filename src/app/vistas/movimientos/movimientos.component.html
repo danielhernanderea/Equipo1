@@ -1,1 +1,28 @@
-<p>movimientos works!</p>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">USUARIO</th>
+        <th scope="col">TIPO DE OPERACION</th>
+        <th scope="col">DESCRIPCION</th>
+        <th scope="col">FECHA</th>
+        <th scope="col">PRECIO COMPRA</th>
+        <th scope="col">DESCRIPCION</th>
+        <th scope="col">ID_CRIPTO</th>
+        <th scope="col">MONTO GASTADO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of movimientos">
+        <td>{{ usuario.idusuario }}</td> 
+        <td>{{ usuario.tipooperacion }}</td>
+        <td>{{ usuario.descripcion }}</td>
+        <td>{{ usuario.fecha }}</td>
+        <td>{{ usuario.preciocompra }}</td>
+        <td>{{ usuario.idcripto }}</td>
+        <td>{{ usuario.montogastado }}</td>      
+      </tr>
+      
+    </tbody>
+  </table>
